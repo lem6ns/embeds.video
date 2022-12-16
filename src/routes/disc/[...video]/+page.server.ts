@@ -4,6 +4,6 @@ export const load = (async ({ params }) => {
     const attachments = !params.video.startsWith("attachments/") ? "attachments/" : ""
 
     return {
-        url: `https://cdn.discordapp.com/${attachments}${params.video}`
+        url: `http://embeds.video/discprox/${attachments}${params.video}`
     }
 }) satisfies PageServerLoad;

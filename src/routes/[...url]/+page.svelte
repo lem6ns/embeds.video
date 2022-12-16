@@ -1,6 +1,7 @@
 <script>
 	import { page } from '$app/stores';
-	const { url } = $page.params;
+	let { url } = $page.params;
+	url = url.replace(/https?:\/\/(cdn|media)\.discordapp\.(com|net)/, "https://embeds.video/discproxy")
 </script>
 
 <svelte:head>
